@@ -30,9 +30,9 @@ body {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 32px;
 	text-transform: uppercase;
-	color: #28ace5;
+	color: tomato;
 	font-weight: 600;
 	margin-bottom: 30px;
 }
@@ -40,7 +40,7 @@ h2 {
 h3 {
 	font-size: 22px;
 	line-height: 1.375em;
-	color: #28ace5;
+	color: tomato;
 	font-weight: 500;
 	margin-bottom: 30px;
 }  
@@ -48,7 +48,7 @@ h3 {
 h4 {
 	font-size: 19px;
 	line-height: 1.375em;
-	color: #28ace5;
+	color: tomato;
 	font-weight: 400;
 	margin-bottom: 30px;
 }  
@@ -62,18 +62,18 @@ h4 {
 }
 
 .logo-small {
-	color: #28ace5;
+	color: tomato;
 	font-size: 50px;
 }
 
 .logo {
-	color: #28ace5;
+	color: tomato;
 	font-size: 200px;
 }
 
 .navbar {
 	margin-bottom: 0;
-	background-color: #28ace5;
+	background-color: tomato;
 	z-index: 9999;
 	border: 0;
 	font-size: 12px !important;
@@ -87,8 +87,8 @@ h4 {
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-	color: #28ace5 !important;
-	background-color: #fff !important;
+	color: tomato !important;
+	background-color: #ffffff !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -96,10 +96,103 @@ h4 {
 	color: #fff !important;
 }
 
+.row {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2em 1em;
+	text-align: center;
+  }
+  .column {
+	width: 100%;
+	padding: 0.5em 0;
+  }
+  h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 3.5em;
+	color: #1f003b;
+  }
+  .card {
+	box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.267);
+	padding: 3.5em 1em;
+	border-radius: 0.6em;
+	color: #1f003b;
+	cursor: pointer;
+	transition: 0.5s;
+	background-color: #ffffff;
+	display: flex center;
+  }
+  .card .img-container {
+	width: 15em;
+	height: 15em;
+	padding: 0.5em;
+	border-radius: 20%;
+	margin: 0 auto 2em auto;
+  }
+  .card img {
+	width: 100%;
+	border-radius: 50%;
+  }
+  .card h3 {
+	font-weight: 500;
+  }
+  .card p {
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0.5em 0 2em 0;
+	letter-spacing: 2px;
+  }
+  .icons {
+	width: 70%;
+	min-width: 180px;
+	margin: auto;
+	display: flex center ;
+	justify-content: space-between;
+  }
+  .card a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.4em;
+  }
+  .card:hover {
+	background: linear-gradient(tomato, #6df6f8, #014b4d);
+	color: #ffffff;
+  }
+  .card:hover .img-container {
+	transform: scale(1.15);
+  }
+  .icons:hover{
+	transform: scale(2);
+  }
+
+  @media screen and (min-width: 768px) {
+	section {
+	  padding: 1em 7em;
+	}
+  }
+  @media screen and (min-width: 992px) {
+	section {
+	  padding: 1em;
+	}
+	.card {
+	  padding: 5em 1em;
+	}
+	.column {
+	  flex: 0 0 33.33%;
+	  max-width: 33.33%;
+	  padding: 0 1em;
+	}
+  }
+  
+
 footer .glyphicon {
 	font-size: 20px;
 	margin-bottom: 20px;
-	color: #28ace5;
+	color: tomato;
 }
 
 .slideanim {
